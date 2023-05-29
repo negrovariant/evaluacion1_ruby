@@ -1,3 +1,6 @@
+
+##obtener los numeros impares del cero AL 20 
+
 i = 0
 
 def getPairNumbers(var1)
@@ -28,7 +31,7 @@ end
 getPairNumbers(i)
 getImpairNumbers(i)
 
-
+##calcular  por tablas desde el cero 
 def tablaDel(tabla)
     if tabla > 0 and tabla <= 10
         i = 0
@@ -43,7 +46,7 @@ def tablaDel(tabla)
     tabla = gets.to_i
     tablaDel(tabla.to_i)
 
-
+##crear una piramide con los caracteres que se ingresen 
     puts "Ingrese el caracter de la piramide"
     c = gets.chomp[0]
     
