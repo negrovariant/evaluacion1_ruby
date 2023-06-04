@@ -3,24 +3,24 @@
 puts "##################################"
 puts "        Calculo de Salario        "
 puts "##################################"
-def salario
+def calcSalario
 puts "Ingrese el salario del trabajador:"
-salario = gets.to_i
-puts "ingrese el valor del aumento:"
-aumento = gets.to_i
+salario = gets.to_f
+puts "ingrese el valor del aumento en porcentaje:"
+aumento = gets.to_f
 
-incremento = salario + (salario * (aumento / 1000))
+incremento = salario + (salario * (aumento / 100))
 puts "El nuevo salario es:#{incremento}"
 puts ""
 end
 
-resultado = salario
+calcSalario()
 
 puts "##################################"
 puts "       Adivina el numero          "
 puts "##################################"
 randA = 1
-randB = 20
+randB = 5
 numero = rand(randA...randB)
 puts "Ingrese un numero entre el #{randA} y el #{randB} "
 loop do
@@ -49,17 +49,17 @@ def calculoIMC
 end
 def  masa_corporal (imc)
     if imc < 18.5
-        puts "esta en su peso"
+        puts "Usted esta en su peso normal"
     elsif imc >= 18.5 && imc < 25
-        puts "estas con sobrepeso"
+        puts "Usted esta con sobrepeso"
     elsif imc >= 25 && imc < 30
-        puts "estas en un peso severo"
+        puts "Usted esta en un peso severo"
     elsif imc >= 30 && imc < 34.9
-        puts "Obesidad grado I: 30 - 34.9 - Moderado"
+        puts "Usted tiene Obesidad grado I: 30 - 34.9 ims - Moderado"
     elsif imc >= 35 && imc < 39.9
-        puts "Obesidad grado II: 35 - 39.9 - Severo"
+        puts "Usted tiene Obesidad grado II: 35 - 39.9 ims- Severo"
     elsif imc >= 40
-        puts "Obesidad grado III: Más de 40 - Muy severo"
+        puts "Usted tiene Obesidad grado III: Más de 40 imc- Muy severo"
         
     else 
         puts "hay obesidad"
